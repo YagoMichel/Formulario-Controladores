@@ -1,0 +1,6 @@
+com\yago\formulario\FormularioApplication.class
+com\yago\formulario\controllers\homeController.class
+com\yago\formulario\controllers\accesoriosController.class
+com\yago\formulario\controllers\MascotasController.class
+com\yago\formulario\controllers\MedicamentoController.class
+com\yago\formulario\controllers\MantenimientoController.class

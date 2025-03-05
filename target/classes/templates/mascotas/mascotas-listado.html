@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: "Montserrat", sans-serif;
+        }
+        table{
+            width: 30%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado - Mascotas</title>
+</head>
+<body>
+    <a href="..">Inicio - Home</a>
+    <h1>Lista de Mascotas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Firulais</td>
+                <td>Gran Perro</td>
+                <td>5</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>|<a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>Gran Perro</td>
+                <td>3</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>|<a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Toby</td>
+                <td>Pastor Alemán</td>
+                <td>2</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>|<a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Simba</td>
+                <td>Pastor Alemán</td>
+                <td>1</td>
+                <td>
+                    <a href="/mascotas/actualizar">Editar</a>|<a href="/mascotas/eliminar">Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="/mascotas/agregar" method="get">
+        <input type="submit" value="Nueva Mascota">
+    </form>
+    
+</body>
+</html>
