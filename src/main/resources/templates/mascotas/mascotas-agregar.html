@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: "Montserrat", sans-serif;
+        }
+        table{
+            width: 40%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar - Mascota</title>
+</head>
+<body>
+    <a href="/mascotas">Cancelar</a>
+    <h1>Agregar Mascota</h1>
+    <hr>
+    <form method="post" action="/mascotas/guardar">
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Dato</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre_mascota" id="nombre_mascota"></td>
+            </tr>
+            <tr>
+                <td>Raza</td>
+                <td>
+                    <select name="raza" id="raza">
+                        <option value="1">Gran Perro</option>
+                        <option value="2">Chihuahua</option>
+                        <option value="3">Husky</option>
+                        <option value="4">Pug</option>
+                        <option value="5">Pastor Aleman</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td><input type="number" name="edad_mascota" id="edad_mascota"></td>
+            </tr>
+            <tr>
+                <td>Observaciones</td>
+                <td><textarea></textarea></td>
+            </tr>
+        </table>
+    </form>
+    <form action="/mascotas/guardar" method="post">
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
