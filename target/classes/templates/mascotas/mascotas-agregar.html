@@ -36,7 +36,7 @@
             </tr>
             <tr>
                 <td>Nombre</td>
-                <td><input type="text" name="nombre_mascota" id="nombre_mascota"></td>
+                <td><input type="text" name="nombre_mascota" id="nombre_mascota" value="Max"></td>
             </tr>
             <tr>
                 <td>Raza</td>
@@ -44,7 +44,7 @@
                     <select name="raza" id="raza">
                         <option value="1">Gran Perro</option>
                         <option value="2">Chihuahua</option>
-                        <option value="3">Husky</option>
+                        <option value="3" selected>Husky</option>
                         <option value="4">Pug</option>
                         <option value="5">Pastor Aleman</option>
                     </select>
@@ -52,15 +52,13 @@
             </tr>
             <tr>
                 <td>Edad</td>
-                <td><input type="number" name="edad_mascota" id="edad_mascota"></td>
+                <td><input type="number" name="edad_mascota" id="edad_mascota" value="3"></td>
             </tr>
             <tr>
                 <td>Observaciones</td>
-                <td><textarea></textarea></td>
+                <td><textarea id="observaciones"></textarea></td>
             </tr>
         </table>
-    </form>
-    <form action="/mascotas/guardar" method="post">
         <input type="submit" value="Guardar">
     </form>
 </body>

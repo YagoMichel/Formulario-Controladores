@@ -29,7 +29,7 @@
 
     <h2>Eliminar mascota</h2>
 
-    <form method="get" action="/mascotas/eliminar">
+    <form method="post" action="/mascotas/eliminar">
         <table>
             <tr>
                 <th>Campo</th>
@@ -57,11 +57,9 @@
             </tr>
             <tr>
                 <td>Observaciones</td>
-                <td><textarea>Muy peligroso</textarea></td>
+                <td><textarea id="observaciones">Muy peligroso</textarea></td>
             </tr>
         </table>
-    </form>
-    <form action="/mascotas/eliminar" method="get">
         <input type="submit" value="Eliminar Mascota">
     </form>
 </body>
